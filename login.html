@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>signup page </title>
+        <style>
+          body{
+            background-color: yellow;
+            font: bold;
+            text-align: center;
+          }
+          label{
+            font-size: 20px;
+          }
+          
+        </style>
+
+    </head>
+    <body>
+        <label for="name">NAME : </label>
+        <input id="name" type="text" placeholder="Enter your name " required min="8" max="20">
+        <br><br>
+        <label for="pass">PASSWORD : </label>
+        <input id="pass" type="password" min="8" placeholder="enter your password">
+        <br><br>
+        <label for="cpass">CONFORM PASSWORD : </label>
+        <input id="cpass" type="password" min="8" placeholder="confrom password">
+        <br><br>
+        <h4>Gender : </h4>
+        <label for="male">male </label>
+        <input id="male" type="radio" value="male" name="gender" checked>
+        <label for ="female">female </label>
+        <input id="female" type="radio" value="female" name="gender" required>
+        <label for ="other">other</label>
+        <input type="radio" id="other" name="gender" checked>
+        <BR>
+        <BR>
+        <Label for="phno"> phnonumber  : </Label>
+        <input id="phno" type="number" required >
+        <br><br>
+        <label for ="contry"> country </label>
+        <select id="country" name="country">
+            <option value="usa">usa</option>
+            <option value="india  ">india</option>
+            <option value ="uk">uk</option>
+            
+        </select>
+        <br>
+        <!--<label for="text">text area </label><br>
+        <textarea id="text" name="message" rows="6" cols="8"></textarea>-->
+        <br><br>
+        <input type="checkbox" id="conform" required>
+        <label for ="conform">I AGREE TERM AND CONDITIONS </label>
+        <br><br>
+        <center><button 
+
+        id="submit">Signup</button></center>
+        <br>
+        <center><button  type="submit">reset</button></center>
+
+    </body>
+</html>
